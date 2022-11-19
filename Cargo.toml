@@ -1,0 +1,12 @@
+[package]
+name = "rusty_terminal_image_displayer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+terminal_size = "0.2.1"
+image = "0.24.3"
+colored = "2"
+argparse = "0.2.2"
