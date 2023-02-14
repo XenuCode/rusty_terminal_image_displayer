@@ -12,7 +12,7 @@ fn main() {
     let mut grayscale:bool =false;
     {  // this block limits scope of borrows by ap.refer() method
         let mut ap = ArgumentParser::new();
-        ap.set_description("Rusty Terminal Image Displayer aka RTID written in rust");
+        ap.set_description("Rusty Terminal Image Displayer aka RTID written in rust :D");
         ap.refer(&mut verbose)
             .add_option(&["-v", "--verbose"], StoreTrue,
                         "Print Width and Height of final image");
