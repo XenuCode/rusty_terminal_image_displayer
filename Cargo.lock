@@ -533,7 +533,7 @@ dependencies = [
 
 [[package]]
 name = "rusty_terminal_image_displayer"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
  "argparse",
  "colored",
