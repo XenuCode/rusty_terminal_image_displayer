@@ -1,5 +1,3 @@
-use std::borrow::Borrow;
-use std::env;
 use image::GenericImageView;
 use image::imageops::FilterType;
 use colored::Colorize;

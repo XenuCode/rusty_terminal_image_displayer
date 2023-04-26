@@ -1,5 +1,4 @@
 use argparse::{ArgumentParser, Store, StoreTrue};
-use terminal_size::{Height, Width};
 use crate::image_to_symbol::generate_symbol_vec;
 
 mod image_to_symbol;
@@ -7,12 +6,11 @@ mod image_to_symbol;
 fn main() {
     let mut verbose = false;
     let mut file_path:String = String::new();
-    let mut dim:String = String::new();
-    let mut arr: [u32;2];
+    let arr: [u32;2];
     let mut grayscale:bool =false;
     {  // this block limits scope of borrows by ap.refer() method
         let mut ap = ArgumentParser::new();
-        ap.set_description("Rusty Terminal Image Displayer aka RTID written in rust :D");
+        ap.set_description("Rusty Terminal Image Displayer aka rusty_terminal_image_displayer written in rust :D");
         ap.refer(&mut verbose)
             .add_option(&["-v", "--verbose"], StoreTrue,
                         "Print Width and Height of final image");
